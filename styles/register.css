@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: 900px;
+    width: 1200px;
+    border: 1px transparent black;
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 10px 3px #1B3B6F;
+}
+
+.leftContainer {
+    height: 900px;
+    width: 600px;
+
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 900px;
+    width: 600px;
+    padding: 25px;
+}
+
+.subRight {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+
+    height: 800px;
+    width: 550px;
+    padding: 25px;
+    gap: 25px;
+}
+
+.subRight > .title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 33px;
+}
+
+.subRight > form {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 450;
+    font-size: 15px;
+}
+
+.signIn > input {
+    display: flex;
+    border: none;
+    outline: none;
+    background-color: #164A41;
+    border-radius: 15px;
+
+    height: 50px;
+    width: 500px;
+    padding: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.signIn input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.signIn > .submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: none;
+    border: none;
+    margin: 0;
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+
+    background-color: #164A41;
+    height: 65px;
+    border-radius: 15px;
+    padding: 25px;
+
+    color: white;
+    font-weight: 550;
+    font-size: 25px;
+}
+
+.bg-green {
+    background-color: #164A41;
+    border-radius: 10px;
+}
