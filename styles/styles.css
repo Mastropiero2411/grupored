@@ -21,7 +21,7 @@
     height: auto;
     display: flex;
     /* background: linear-gradient(to right, var(--cactus), silver); */
-    background-color: var(--cactus);
+    background-color: var(--cactus);   
 }
 
 .box {
