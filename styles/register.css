@@ -31,6 +31,8 @@ body {
     height: 900px;
     width: 600px;
 
+    /* box-shadow: 0px 5px 15px 15px #103732; */
+
 }
 
 .rightContainer {
@@ -42,24 +44,46 @@ body {
     height: 900px;
     width: 600px;
     padding: 25px;
+    border-radius: 15px;
 }
 
 .subRight {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    justify-content: baseline;
+    align-items: center;
+    justify-content: center;
 
     height: 800px;
     width: 550px;
     padding: 25px;
-    gap: 25px;
+    gap: 10px;
 }
 
-.subRight > .title {
+.reg {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 33px;
+}
+
+.or {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.subRight > .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 33px; */
+
+    width: 550px;
+    height: 72px;
+
 }
 
 .subRight > form {
@@ -71,6 +95,10 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 450;
     font-size: 15px;
+}
+
+.signIn > label {
+    font-weight: 55 0;
 }
 
 .signIn > input {
@@ -113,6 +141,16 @@ body {
     color: white;
     font-weight: 550;
     font-size: 25px;
+}
+
+.logIn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 200px;
+    width: 200px;
 }
 
 .bg-green {
