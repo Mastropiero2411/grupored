@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cactus1: #164a41;
+    --cactus2: #4d774e;
+    --cactus3: #90c880;
+    --cactus4: #f1b24a;
+}
+
+body {
+    display: flex;
+    justify-self: center
+}
+
+.container {
+    width: 80vw;
+    height: auto;
+}
+
+.box1,
+.box2,
+.box3 {
+    display: flex;
+}
+
+.header,
+.header1 {
+    width: 80vw;
+    height: 200px;
+    background-color: var(--cactus4);
+}
+
+.header {
+    padding: 20px;
+    font-size: smaller;
+    background-color: var(--cactus3);
+}
+
+.header1 {
+    background-image: url("/images/grupo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.nav {
+    width: 80vw;
+    height: 200px;
+    background-color: var(--cactus1);
+}
+
+.dos {
+    padding: 30px;
+    background-color: silver;
+
+}
+
+h1 {
+    /* text-align: center; */
+    color: white;
+    transform: rotate(-90deg);
+    font-size: xx-large;
+    padding-left: 20px;
+
+}
+
+h2 {
+    color: white;
+    text-align: center;
+
+}
+
+h3 {
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+
+}
+
+p {
+    color: var(--cactus1);
+    text-align: center;
+    font-weight: bold
+}
+
+.general {
+    display: flex;
+
+}
+
+
+.section {
+    width: 20vw;
+    height: auto;
+    background-color: var(--cactus3);
+}
+
+.section1 {
+    width: 60vw;
+    height: auto;
+    background-color: var(--cactus2);
+
+}
+
+.box3 {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 200px;
+    border-radius: 100px;
+    border: 2px solid gray;
+
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+}
+
+summary {
+    color: wheat;
+    font-weight: bolder;
+    padding-left: 20px
+}
