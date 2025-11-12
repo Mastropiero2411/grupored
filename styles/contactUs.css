@@ -21,31 +21,45 @@ body {
 .mainContainer {
     display: flex;
     flex-direction: row;
+
+    height: 700px;
+    width: 1700px;
 }
 
 .leftContainer {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    justify-content: baseline;
+    align-items: center;
+    justify-content: center;
 
-    height: 750px;
+    height: 650px;
     width: 850px;
     border: 1px transparent black;
 
-    padding: 45px;
+    padding: 15px;
+    margin: 0px;
 }
 
 .subLeft {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    justify-content: baseline;
+    justify-content: center;
 
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
+
+    height: 300px;
+    width: 750px;
 }
+ .subLeft > h1 {
+    text-align: left;
+ }
 
-
+ .subLeft > span {
+    text-align: left;
+ }
+ 
 
 .leftContainer > .subLeft > h1 {
     font-weight: bolder;
@@ -117,6 +131,7 @@ body {
 
     height: 750px;
     width: 850px;
+    padding: 0px;
     border: 1px transparent black;
 }
 
@@ -126,9 +141,9 @@ body {
     align-items: center;
     justify-content: baseline;
 
-    height: 700px;
+    height: 680px;
     width: 500px;
-    padding: 25px;
+    padding: 15px;
 
     border: 1px solid white;
     border-radius: 25px;
@@ -137,6 +152,63 @@ body {
     box-shadow: 0px 0px 15px 15px #0f352e;
     
 }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 600px;
+    width: 450px;
+
+    padding: 25px;
+}
+
+.form > form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+
+    height: 600px;
+    width: 450px;
+
+    gap: 15px;
+}
+
+.form > form > input {
+    height: 40px;
+    width: 400px;
+    border: 1px solid #164A41;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form > form > .comment {
+  height: 300px;
+  width: 400px;
+  border: 1px solid #164A41;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;           /* para que no se pueda agrandar con el mouse */
+  text-align: left;       /* alinea horizontalmente a la izquierda */
+  vertical-align: top;    /* opcional, pero buena práctica */
+}
+
+.form > form > button {
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 25px;
+    background-color: #164A41;
+    color: #FBF5F3;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;}
+    
 
 .op {
     font-weight: bolder;
