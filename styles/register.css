@@ -153,6 +153,12 @@ body {
     width: 200px;
 }
 
+.cards {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
 .bg-green {
     background-color: #164A41;
     border-radius: 10px;
