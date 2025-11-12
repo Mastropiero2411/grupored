@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.box1 {
+    width: 100vw;
+    height: auto;
+    background-color: greenyellow;
+    border: 1px solid black;
+    display: flex;
+}
+
+.tittle {
+    width: 100vw;
+    border: 1px solid black;
+
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
