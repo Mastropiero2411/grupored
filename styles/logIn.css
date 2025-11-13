@@ -82,6 +82,10 @@ body {
   font-size: 18px;
 }
 
+.password{
+  color: #0d2b26;
+}
+
 @media (max-width: 768px) {
   .MainContainer {
     width: 90%;
