@@ -10,9 +10,10 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #164A41;
 }
 
-.mainContainer {
+.MainContainer {
   width: 500px;
   min-height: 300px;
   display: flex;
@@ -23,6 +24,7 @@ body {
   padding: 40px;
   box-shadow: 0px 0px 35px 15px #0d2b26;
   border-radius: 30px;
+  background-color: #FBF5F3;
 }
 
 .logIn > input {
@@ -69,7 +71,7 @@ body {
   color: #164A41;
 }
 
-.mainContainer > .subContainer > p {
+.MainContainer > .SubContainer > p {
   font-size: 28px;
   font-weight: bolder;
   margin-bottom: 10px;
@@ -79,3 +81,40 @@ body {
   margin-left: 8px;
   font-size: 18px;
 }
+
+.password{
+  color: #0d2b26;
+}
+
+@media (max-width: 768px) {
+  .MainContainer {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .logIn > input,
+  .continue {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .MainContainer {
+    width: 90%;
+    max-width: 400px;
+    padding: 30px 20px;
+  }
+
+  .logIn > input,
+  .continue {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
