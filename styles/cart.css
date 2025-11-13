@@ -28,14 +28,12 @@ body {
 .bi {
     color: black;
     font-size: 25px;
-    /* padding-top: 20px; */
     cursor: pointer;
 }
 
 .box1 {
     display: flex;
     border-bottom: 4px solid #e7e7e7;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); */
 }
 
 .box2 {
