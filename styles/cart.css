@@ -29,13 +29,13 @@ body {
     color: black;
     font-size: 25px;
     /* padding-top: 20px; */
-
+    cursor: pointer;
 }
 
 .box1 {
     display: flex;
-    /* border: 1px solid black; */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-bottom: 4px solid #e7e7e7;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); */
 }
 
 .box2 {
@@ -65,13 +65,16 @@ body {
 .section1 {
 
     width: 45vw;
+    height: 80vh;
     display: flex;
     flex-direction: column;
+    ;
 
 }
 
 .section2 {
     width: 25vw;
+    height: 80vh;
     padding: 20px;
 }
 
@@ -91,9 +94,13 @@ body {
 .boxproduct1,
 .boxproduct2 {
     display: flex;
-
+    color: black;
 }
 
+.boxproduct1 {
+    font-weight: bold;
+
+}
 
 .table {
     width: 100px;
@@ -117,11 +124,11 @@ body {
     font-weight: bold;
     padding-top: 3px;
     background-color: #dfdddd;
+    cursor: pointer;
 }
 
 .auri {
     width: 80px;
-    height: 50px;
 }
 
 .element {
@@ -136,22 +143,37 @@ body {
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
+    font-size: small;
+}
+
+.element1>div>button {
+    width: 80px;
+    height: 20px;
+    color: gray;
+
 }
 
 .subelem {
     text-align: center;
     align-content: center;
     width: 300px;
-    height: 40px;
+    height: auto;
     border: 1px solid black;
     border-radius: 10px;
-    background-color: #dfdddd;
+    background-color: #eaeaea;
     margin-bottom: 20px;
     font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 10px;
 }
 
 .subelem>p {
     font-size: small;
+}
+
+.subelem>.bi {
+    color: orange;
 }
 
 button {
@@ -159,16 +181,19 @@ button {
     height: 40px;
     border-radius: 8px;
     font-weight: bold;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 
 }
 
 .b1 {
-    background-color: gray;
+    background-color: #666666;
     color: beige;
 }
 
 .b2 {
-    background-color: orange;
+    background-color: #fec107;
 }
 
 .bi-arrow-left-right {
@@ -179,4 +204,35 @@ button {
 .bi-cart-check {
     font-size: larger;
     color: black
+}
+
+.element2 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.element2>img {
+    width: 200px;
+    height: auto;
+}
+
+.element2>p {
+    color: gray;
+    font-weight: bold;
+    font-size: small;
+    justify-content: center;
+}
+
+.box3>div {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    width: 100vw;
+    text-align: center;
+    color: gray;
+}
+
+.box3>div>img {
+    width: 200px;
 }
