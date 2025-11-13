@@ -5,6 +5,8 @@
     font-family: "Montserrat", sans-serif;
 }
 
+
+
 :root {
     --cactus: #164a41;
 }
@@ -82,39 +84,76 @@
     font-size: 30px;
     color: black;
 }
-.bi-cart{
+
+.bi-cart {
     font-size: 30px;
     color: black;
 }
 
-.form-floating{
+.form-floating {
     height: 30px !important;
-    width: 15vw;
+    width: 200px;
     padding-top: 15px;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .bi-search {
     position: absolute;
-    right: 20px;
+    right: 10px;
+    flex-direction: column;
 }
-.inputNavbar{
+
+.inputNavbar {
     height: 30px;
     border-radius: 15px;
     padding-left: 20px;
 }
+
 .bi-list{
     font-size: 30px;
-    color: #141a1a;
+    color: black;
 }
-@media (min-width:700px){
-   .bi-list{
+.lista{
+    display: flex;
+    flex-direction: column;
+}
+
+.lista > a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bold
+}
+
+@media (min-width:1000px) {
+    .botonHamburguesa {
         display: flex;
         display: none;
+        flex-direction: column;
     }
-    
 }
+
+@media(max-width:1000px) {
+    .links {
+        display: none;
+    }
+
+    .navlinks {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:1000px) {
+    .form-floating {
+        display: none;
+        flex-direction: column;
+    }
+}
+
+
+
 .box {
     width: 100vw;
     height: 50vh;
