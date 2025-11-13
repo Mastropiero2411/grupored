@@ -14,7 +14,7 @@ body {
 .box3 {
     background-color: white;
     /* border: 1px solid black; */
-    width: 100vw;
+    width: 100%;
     height: auto;
 
 }
@@ -26,7 +26,7 @@ body {
 }
 
 .bi {
-    color: black;
+    color: gray;
     font-size: 25px;
     cursor: pointer;
 }
@@ -66,8 +66,6 @@ body {
     height: 80vh;
     display: flex;
     flex-direction: column;
-    ;
-
 }
 
 .section2 {
