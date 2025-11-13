@@ -56,7 +56,7 @@
     color: #333;
 }
 
-/* Estilos de los Enlaces */
+
 .navLinks a {
     text-decoration: none;
     color: #666;
@@ -103,6 +103,17 @@
     height: 30px;
     border-radius: 15px;
     padding-left: 20px;
+}
+.bi-list{
+    font-size: 30px;
+    color: #141a1a;
+}
+@media (min-width:700px){
+   .bi-list{
+        display: flex;
+        display: none;
+    }
+    
 }
 .box {
     width: 100vw;
