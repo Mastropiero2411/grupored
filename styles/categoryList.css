@@ -58,7 +58,7 @@ body {
 
 .SubRight1 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     
@@ -70,12 +70,28 @@ body {
 
 .SubRight2 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     
     height: 325px;
     width: 1000px;
+}
+
+.SubSub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 333px;
+}
+
+.subImg {
+    height: 250px;
+}
+.subImgSofa {
+    height: 200px;
 }
 /* #164A41
 #FBF5F3 */
