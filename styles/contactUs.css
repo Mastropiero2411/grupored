@@ -6,6 +6,10 @@
     
 }
 
+span {
+    font-size: 20px;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -90,11 +94,11 @@ body {
     align-items: center;
     justify-content: baseline;
 
-    padding: 15px;
+    padding: 25px;
     gap: 25px;
 
-    height: 250px;
-    width: 220px;
+    height: 300px;
+    width: 500px;
     border: 1px transparent black;
     border-radius: 15px;
     backdrop-filter: blur(10px);
@@ -249,4 +253,5 @@ body {
     font-weight: light;
     color: #FBF5F3;
     text-align: left;
+    font-size: 18px;
 }
