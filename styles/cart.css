@@ -5,15 +5,9 @@
     font-family: "Montserrat", sans-serif;
 }
 
-body {
-    background-color: rgb(185, 27, 27);
-}
-
-.box1,
 .box2,
 .box3 {
     background-color: white;
-    /* border: 1px solid black; */
     width: 100%;
     height: auto;
 
@@ -25,16 +19,6 @@ body {
 
 }
 
-.bi {
-    color: gray;
-    font-size: 25px;
-    cursor: pointer;
-}
-
-.box1 {
-    display: flex;
-    border-bottom: 4px solid #e7e7e7;
-}
 
 .box2 {
     background-color: #f5f5f5;
@@ -103,15 +87,13 @@ body {
     margin: 20px;
     display: flex;
     font-size: small;
-
-
 }
 
 .table>p {
     font-weight: bold;
 }
 
-.ta {
+.targ {
     width: 25px;
     height: 25px;
     border: 1px solid silver;
@@ -231,4 +213,69 @@ button {
 
 .box3>div>img {
     width: 200px;
+}
+
+@media (max-width: 500px) {
+    .box3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .two,
+    .three {
+        display: none;
+    }
+
+    .auri {
+        width: 25px;
+    }
+
+    .targ {
+        width: 15px;
+    }
+
+
+    .section1,
+    .section2,
+    .foot,
+    .box2 {
+        width: auto;
+        height: auto;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    /* .element1 {
+        justify-content: space-around;
+    } */
+
+    .box2,
+    .box3,
+    p,
+    .boxproduct1,
+    .boxproduct2 {
+        font-size: smaller;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+}
+
+/* @media (min-width: 501px) and (max-width: 800px) {} */
+
+@media (max-width: 1200px) {
+    .box3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section1,
+    .section2 {
+        width: auto;
+        height: auto;
+    }
+
+    .element1 {
+        justify-content: space-around;
+    }
 }
