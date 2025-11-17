@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details</title>
-    <link rel="stylesheet" href="/details.css">
+    <link rel="stylesheet" href="/styles/details.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -16,7 +16,37 @@
     <div class="containerdet">
         <div class="box1">
 
-            <div class="boxsub one"><img src="/image.png" alt=""></div>
+            <div class="boxsub one">
+                <section class="carousel-css" aria-label="Galería de imágenes">
+                    <input type="radio" name="carousel" id="c1" checked>
+                    <input type="radio" name="carousel" id="c2">
+                    <input type="radio" name="carousel" id="c3">
+
+                    <div class="slides">
+                        <div class="slide s1">
+                            <img src="/images/cactusB.png" alt="cactus blanco">
+                            <label class="nav prev" for="c3" aria-label="anterior">&#10094;</label>
+                            <label class="nav next" for="c2" aria-label="siguiente">&#10095;</label>
+                        </div>
+                        <div class="slide s2">
+                            <img src="/images/cactusN.png" alt="cactus negro">
+                            <label class="nav prev" for="c1" aria-label="anterior">&#10094;</label>
+                            <label class="nav next" for="c3" aria-label="siguiente">&#10095;</label>
+                        </div>
+                        <div class="slide s3">
+                            <img src="/images/auto.png" alt="imagen">
+                            <label class="nav prev" for="c2" aria-label="anterior">&#10094;</label>
+                            <label class="nav next" for="c1" aria-label="siguiente">&#10095;</label>
+                        </div>
+                    </div>
+
+                    <div class="indicators" role="tablist">
+                        <label for="c1" class="dot" aria-label="slide 1"></label>
+                        <label for="c2" class="dot" aria-label="slide 2"></label>
+                        <label for="c3" class="dot" aria-label="slide 3"></label>
+                    </div>
+                </section>
+            </div>
             <div class="boxsub two">
                 <div class="like">
                     <input type="checkbox" id="like" hidden>
@@ -38,23 +68,7 @@
         <div class="box2">
             <div class="boxsub1 one">
                 <h6>Características</h6>
-                <!-- <details>
-                    <summary>Detalles</summary>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et placeat magnam ut, ducimus inventore
-                        molestias repellendus optio voluptatum dolor architecto. Labore, expedita officia dolorum
-                        voluptate
-                        officiis laboriosam qui unde possimus.</p>
-                </details>
-                <details>
 
-                    <summary>Descripción</summary>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et placeat magnam ut, ducimus
-                        inventore
-                        molestias repellendus optio voluptatum dolor architecto. Labore, expedita officia dolorum
-                        voluptate
-                        officiis laboriosam qui unde possimus.</p>
-
-                </details> -->
                 <div class="accordion">
                     <div class="item">
                         <input type="checkbox" id="acc1">
@@ -83,11 +97,11 @@
                     <button class="b2"> <i class="bi bi-cart2"></i> &#32 Agregar al carrito</button>
                 </div>
                 <h4>Medios de Pago</h4>
-                <img src="/medios-de-pago.png" alt="imagen medios de pago">
+                <img src="/images/medios-de-pago.png" alt="medios de pago">
             </div>
         </div>
         <div class="box3"></div>
-        <div class="box4"></div>
+
     </div>
 </body>
 

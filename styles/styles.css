@@ -20,8 +20,8 @@
 }
 
 .general {
-    width: 100vw;
-    height: auto;
+    width: 100%;
+    /* height: auto; */
     display: flex;
     /* background: linear-gradient(to right, var(--cactus), silver); */
     background-color: var(--cactus);
@@ -111,16 +111,17 @@
     padding-left: 20px;
 }
 
-.bi-list{
+.bi-list {
     font-size: 30px;
     color: black;
 }
-.lista{
+
+.lista {
     display: flex;
     flex-direction: column;
 }
 
-.lista > a {
+.lista>a {
     text-decoration: none;
     color: black;
     font-size: 25px;
@@ -155,8 +156,8 @@
 
 
 .box {
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
+    /* height: 50%; */
 
     color: beige;
     text-align: center;
@@ -204,4 +205,37 @@ h2 {
     padding-bottom: 5px;
     font-size: small;
     background-color: #103732;
+}
+
+@media (max-width:900px) {
+
+    .general {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .box {
+        height: 50%;
+        margin-top: 10px;
+    }
+
+
+    .subbox {
+        justify-content: left;
+    }
+
+    .three>ul>li {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .one>p {
+        font-size: small;
+        text-align: center;
+    }
+
+    .copy {
+        text-align: center;
+    }
 }
