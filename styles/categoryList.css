@@ -5,6 +5,16 @@
     font-family: "Montserrat", sans-serif;
 }
 
+/* :root {
+    --cactus1: #164a41;
+    --cactus2: #4d774e;
+    --cactus3: #90c880;
+    --cactus4: #f1b24a;
+    --fondo: #ededed;
+    --fondo1: #ffffff;
+    --fondo2: #e5e5e5;
+} */ 
+
 body {
     display: flex;
     flex-direction: column;
@@ -128,6 +138,13 @@ body > p {
 
     object-fit: contain;
     pointer-events: none;
+}
+
+.imgPhone {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: contain;
 }
 
 .item {

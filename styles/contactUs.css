@@ -197,9 +197,9 @@ body {
   border-radius: 8px;
   padding: 10px;
   font-size: 16px;
-  resize: none;           /* para que no se pueda agrandar con el mouse */
-  text-align: left;       /* alinea horizontalmente a la izquierda */
-  vertical-align: top;    /* opcional, pero buena práctica */
+  resize: none;           
+  text-align: left;       
+  vertical-align: top;    
 }
 
 .form > form > button {
