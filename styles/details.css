@@ -52,14 +52,20 @@
 
 }
 
-h3 {
-    text-align: right;
-    padding-right: 10px;
+h1 {
+    font-size: x-large !important;
+    text-align: left;
+    padding: 0 20px 0 20px;
 }
 
 h2 {
     text-align: left;
     padding-left: 20px;
+}
+
+h3 {
+    text-align: right;
+    padding-right: 10px;
 }
 
 h4 {
@@ -85,6 +91,11 @@ h6 {
     display: flex;
     justify-content: flex-end;
     margin-right: 10px;
+}
+
+.bi-truck {
+    color: orange;
+    font-size: x-large;
 }
 
 .bi-heart:hover {
@@ -156,9 +167,15 @@ button {
     height: 40px;
     align-self: center;
     font-weight: bold;
-    background-color: #90c880;
+    background-color: var(--cactus3);
     color: #164a41;
     border: none;
+}
+
+button:hover {
+    width: 92%;
+    height: 42px;
+    box-shadow: 0 0 3px 1px gray;
 }
 
 .boxsub1.two {
@@ -173,6 +190,7 @@ button {
 
 .b2>.bi {
     color: green;
+    font-size: larger;
 
 }
 
@@ -206,7 +224,7 @@ button {
 }
 
 .accordion input:checked~.content {
-    max-height: 200px;
+    max-height: 50%;
     padding: 12px;
 }
 
@@ -255,19 +273,23 @@ button {
 
 .slide {
     width: 100%;
-    height: 100%;
     flex-shrink: 0;
     position: relative;
     aspect-ratio: 16 / 9;
     overflow: hidden;
-    background: #111;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slide img {
     display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
     object-position: center;
 }
 
@@ -355,6 +377,11 @@ button {
     .slide img {
         object-position: center top;
 
+    }
+
+    .slide {
+        display: block;
+        height: 100%;
     }
 
     h2,
