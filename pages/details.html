@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details</title>
-    <link rel="stylesheet" href="/details.css">
+    <link rel="stylesheet" href="/styles/details.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -16,7 +16,37 @@
     <div class="containerdet">
         <div class="box1">
 
-            <div class="boxsub one"><img src="/image.png" alt=""></div>
+            <div class="boxsub one">
+                <section class="carousel-css" aria-label="Galería de imágenes">
+                    <input type="radio" name="carousel" id="c1" checked>
+                    <input type="radio" name="carousel" id="c2">
+                    <input type="radio" name="carousel" id="c3">
+
+                    <div class="slides">
+                        <div class="slide s1">
+                            <img src="/gafas1.jpg" alt="imagen gafas rv costado">
+                            <label class="nav prev" for="c3" aria-label="anterior">&#10094;</label>
+                            <label class="nav next" for="c2" aria-label="siguiente">&#10095;</label>
+                        </div>
+                        <div class="slide s2">
+                            <img src="/gafas2.jpg" alt="imagen gafas rv visor desplegado">
+                            <label class="nav prev" for="c1" aria-label="anterior">&#10094;</label>
+                            <label class="nav next" for="c3" aria-label="siguiente">&#10095;</label>
+                        </div>
+                        <div class="slide s3">
+                            <img src="/gafas3.jpg" alt="imagen vision gafas puestas">
+                            <label class="nav prev" for="c2" aria-label="anterior">&#10094;</label>
+                            <label class="nav next" for="c1" aria-label="siguiente">&#10095;</label>
+                        </div>
+                    </div>
+
+                    <div class="indicators" role="tablist">
+                        <label for="c1" class="dot" aria-label="slide 1"></label>
+                        <label for="c2" class="dot" aria-label="slide 2"></label>
+                        <label for="c3" class="dot" aria-label="slide 3"></label>
+                    </div>
+                </section>
+            </div>
             <div class="boxsub two">
                 <div class="like">
                     <input type="checkbox" id="like" hidden>
@@ -25,11 +55,11 @@
                     </label>
                 </div>
 
-                <h2>Musculosa Morley King</h2>
-                <h2>$20.000</h2>
-                <h4>Mismo precio en 3 cuotas de $14.996,67</h4>
-                <h5>Precio sin impuestos nacionales: $37.182</h5>
-                <h4>Llega GRATIS el día Martes</h4>
+                <h1>Gafas de Realidad Virtual 3d VR Con Auriculares y Mando</h1>
+                <h2>$72.150</h2>
+                <h4>Mismo precio en 3 cuotas de $24.050</h4>
+                <h5>Precio sin impuestos nacionales: $56.998,50</h5>
+                <h4><i class="bi bi-truck"></i>&#32Llega GRATIS el día Martes</h4>
                 <h4>Devolución GRATIS</h4>
                 <h5>Tenés 30 días desde que lo recibís</h5>
             </div>
@@ -38,29 +68,33 @@
         <div class="box2">
             <div class="boxsub1 one">
                 <h6>Características</h6>
-                <!-- <details>
-                    <summary>Detalles</summary>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et placeat magnam ut, ducimus inventore
-                        molestias repellendus optio voluptatum dolor architecto. Labore, expedita officia dolorum
-                        voluptate
-                        officiis laboriosam qui unde possimus.</p>
-                </details>
-                <details>
 
-                    <summary>Descripción</summary>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et placeat magnam ut, ducimus
-                        inventore
-                        molestias repellendus optio voluptatum dolor architecto. Labore, expedita officia dolorum
-                        voluptate
-                        officiis laboriosam qui unde possimus.</p>
-
-                </details> -->
                 <div class="accordion">
                     <div class="item">
                         <input type="checkbox" id="acc1">
                         <label for="acc1" class="title">Descripción</label>
                         <div class="content">
-                            Este es el contenido de la Descripción
+                            <p>Gafas De Realidad Virtual 3d VR</p>
+                            <p>Gafas de realidad virtual de alta calidad, más cómodas de usar con auriculares estéreo.
+                                Esponja de alta calidad con teclado de memoria, suaves y cómodas, que reducen la presión
+                                del audífono en la oreja.
+                                Fabricadas con material de alta calidad: las correas en forma de T duraderas y
+                                ajustables las hacen adecuadas para diferentes personas, desde niños hasta adultos.
+                                Además, los suaves cojines de la parte frontal de la pantalla de la tarjeta VR también
+                                hacen que sea cómoda de usar y mejoran tu
+                                experiencia de realidad virtual.
+                                Lente de resina óptica de alta calidad: equipada con lentes de resina óptica de alta
+                                calidad especialmente tratadas, no experimentarás fatiga visual ni mareos aunque la
+                                utilices durante mucho tiempo.
+                                Protegerá tus ojos cuando disfrutes de películas y juegos en 3D.
+                                Diseñado para teléfonos inteligentes Compatible con todos los teléfonos inteligentes de
+                                4,7 a 6,5 pulgadas, incluidos los XS/X/8/8 Plus/7/7/7 7 Plus/6/6 Plus/6/6 Plus/6S,
+                                Samsung Galaxy S3, S 3 4, S5, S6, Note 4, Note5, LG Nexus 5, LG G2, G3, LG V10, Flex HTC
+                                One M, Nexus, etc. Antes de disfrutar de la vista de realidad virtual, tienes que
+                                descargar una aplicación de realidad virtual en tu dispositivo.
+                                Gran idea de regalo para familiares y amigos.
+                                Servicio de atención al cliente y asistencia rápida.</p>
+
                         </div>
                     </div>
 
@@ -68,7 +102,15 @@
                         <input type="checkbox" id="acc2">
                         <label for="acc2" class="title">Detalle</label>
                         <div class="content">
-                            Este es el contenido del Detalle.
+                            <ul>
+                                <li>Marca: Generic </li>
+                                <li>Modelo: VR</li>
+                                <li>Color: Negro</li>
+                                <li>Dimensiones: 5 cm x 10 cm x 10 cm</li>
+                                <li>Con control remoto: Sí</li>
+                                <li>Es gamer: Sí </li>
+                                <li>Accesorios incluidos: Gamepad</li>
+                            </ul>
                         </div>
                     </div>
 
@@ -83,12 +125,14 @@
                     <button class="b2"> <i class="bi bi-cart2"></i> &#32 Agregar al carrito</button>
                 </div>
                 <h4>Medios de Pago</h4>
-                <img src="/medios-de-pago.png" alt="imagen medios de pago">
+                <img src="medios-de-pago.png" alt="medios de pago">
             </div>
         </div>
         <div class="box3"></div>
-        <div class="box4"></div>
+
     </div>
+
+
 </body>
 
 </html>
