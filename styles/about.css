@@ -161,14 +161,16 @@ summary {
         display: none;
     }
 
-    .box1 {
+    .header1 {
         display: none;
     }
 
     img {
-        width: 40px;
-        height: auto;
+        display: none;
     }
 
-
+    .section {
+        background-color: #4d774e;
+        border: #4d774e;
+    }
 }
