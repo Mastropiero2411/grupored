@@ -3,30 +3,36 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 .containerLogos{
-    height: 20px;
+    height: 35vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
     padding: 10px 0;
 }
 
-.Samsung {
+.containerImagen > img {
+    width: 100px;
+}
+.imagenLogos {
     border-radius: 100px;
     box-shadow: 0 0 7px #e6f7ff;
+    transition: color 0.3s;
 }
 
-.Apple {
-    border-radius: 100px;
-    box-shadow: 0 0 7px #e6f7ff
+.texto > div:hover {
+    filter: drop-shadow(2px 2px 2px rgb(168, 168, 168));
 }
+.containerTarjetas{
+    width: 95%;
+    display:flex;
+    gap: 15px;
+    margin: 15px;
+} 
+@media(min-width:1000px){
 
-.Xiaomi {
-    border-radius: 100px;
-    box-shadow: 0 0 7px #e6f7ff;
-}
-
-.Motorola {
-    border-radius: 100px;
-    box-shadow: 0 0 7px;
+    .containerLogos{
+        display: flex;
+    }
 }
