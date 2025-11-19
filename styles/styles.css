@@ -5,54 +5,63 @@
     font-family: "Montserrat", sans-serif;
 }
 
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+}
 
 
 :root {
-    --cactus: #164a41;
-}
-
-.one>p {
-    font-size: medium;
-    padding: 10px;
-    color: beige;
-    text-align: justify;
-    font-size: small;
-}
-
-.general {
-    width: 100%;
-    /* height: auto; */
-    display: flex;
-    /* background: linear-gradient(to right, var(--cactus), silver); */
-    background-color: var(--cactus);
+    --cactus1: #164a41;
+    --cactus2: #4d774e;
+    --cactus3: #90c880;
+    --cactus4: #f1b24a;
+    --fondo: #ededed;
+    --fondo1: #ffffff;
+    --fondo2: #e5e5e5;
 }
 
 .navbar {
-    background-color: rgba(255, 255, 255, 0.7);
+    /* Color blanco semi-transparente */
+    background-color: beige;
 
+    /* Borde sutil y sombra para darle profundidad */
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 
+    /* Fija el navbar arriba */
     position: fixed;
     left: 0;
     width: 100%;
+    height: 100px;
     z-index: 1000;
     padding: 10px 0;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0px 60px;
-    padding: 0 20px;
+.container1 {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
-    font-weight: bold;
-    font-size: 15px;
-    color: #333;
+.logo>img {
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid black; */
+
 }
 
 
@@ -71,10 +80,11 @@
 
 .navIcons {
     display: flex;
-    gap: 25px;
+    gap: 15px;
     font-size: 1.1rem;
     color: #666;
     cursor: pointer;
+    margin-right: 20px;
 }
 
 .bi-person-circle {
@@ -88,9 +98,9 @@
 }
 
 .form-floating {
-    height: 30px !important;
+    height: 40px !important;
     width: 200px;
-    padding-top: 15px;
+    padding-top: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -100,6 +110,7 @@
     position: absolute;
     right: 10px;
     flex-direction: column;
+    padding-top: 5px;
 }
 
 .inputNavbar {
@@ -124,6 +135,7 @@
     font-size: 25px;
     font-weight: bold
 }
+
 
 @media (min-width:1000px) {
     .botonHamburguesa {
@@ -150,12 +162,24 @@
     }
 }
 
+/* ======== FOOTER ======= */
 
+.general {
+    width: 100%;
+    display: flex;
+    background-color: var(--cactus1);
+}
+
+.one>p {
+    font-size: medium;
+    padding: 10px;
+    color: beige;
+    text-align: justify;
+    font-size: small;
+}
 
 .box {
     width: 100%;
-    /* height: 50%; */
-
     color: beige;
     text-align: center;
 }
@@ -201,7 +225,7 @@ h2 {
     padding-top: 10px;
     padding-bottom: 5px;
     font-size: small;
-    background-color: #103732;
+    background-color: var(--cactus1);
 }
 
 @media (max-width:900px) {
