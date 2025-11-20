@@ -106,7 +106,7 @@ footer {
 
 .bi-search {
     position: absolute;
-    right: 280px;
+    right: 0px;
     flex-direction: column;
     padding-top: 5px;
 }

@@ -39,7 +39,7 @@ footer {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 
-    /* Fija el navbar arriba */
+  
     position: fixed;
     left: 0;
     width: 100%;
@@ -119,10 +119,6 @@ footer {
     padding-left: 20px;
 }
 
-.bi-list {
-    font-size: 30px;
-    color: black;
-}
 
 .lista {
     display: flex;
