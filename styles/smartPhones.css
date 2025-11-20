@@ -45,13 +45,13 @@
     }
 
     .containerTarjetas {
-        display: inline;
+        display: flex;
         justify-content: center;
         align-items: center;
-        width: 1%;
-        height: 9px;
-        max-width: 90px;
-        padding: 50px;
+        width: 100%;
+        padding: 20px;
+        gap: 10px;
+        flex-wrap: wrap;
     }
 
 
