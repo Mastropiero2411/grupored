@@ -21,7 +21,6 @@
     width: 100vw;
     height: auto;
     display: flex;
-    /* background: linear-gradient(to right, var(--cactus), silver); */
     background-color: var(--cactus);
 }
 
@@ -29,16 +28,14 @@
     background-color: rgba(0, 0, 0, 0.35);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-
+    border-bottom: 1px solid rgb(255, 255,255, 0.3);
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: 1000;
+    width: 1000%;
     padding: 10px 0;
+
+
 
 }
 
