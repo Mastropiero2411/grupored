@@ -10,16 +10,21 @@
     --cactus2: #4d774e;
     --cactus3: #90c880;
     --cactus4: #f1b24a;
+    --fondo: #ededed;
+    --fondo1: #ffffff;
+    --fondo2: #e5e5e5;
 }
 
 body {
     display: flex;
-    justify-self: center
+    justify-self: center;
+    background-color: var(--fondo1);
 }
 
 .container {
+    margin-top: 9%;
     width: 80vw;
-    height: auto;
+    /* height: auto; */
 }
 
 .box1,
@@ -98,13 +103,13 @@ p {
 
 .section {
     width: 20vw;
-    height: auto;
+    /* height: auto; */
     background-color: var(--cactus3);
 }
 
 .section1 {
     width: 60vw;
-    height: auto;
+    /* height: auto; */
     background-color: var(--cactus2);
 
 }
