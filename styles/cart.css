@@ -5,9 +5,19 @@
     font-family: "Montserrat", sans-serif;
 }
 
+:root {
+    --cactus1: #164a41;
+    --cactus2: #4d774e;
+    --cactus3: #90c880;
+    --cactus4: #f1b24a;
+    --fondo: #ededed;
+    --fondo1: #ffffff;
+    --fondo2: #e5e5e5;
+}
+
 .box2,
 .box3 {
-    background-color: white;
+    background-color: var(--fondo1);
     width: 100%;
     height: auto;
 
@@ -25,7 +35,7 @@
     text-align: center;
     padding-top: 10px;
     padding-bottom: 20px;
-
+    margin-top: 7%;
 
 }
 
@@ -245,10 +255,6 @@ button {
         margin-left: 0;
     }
 
-    /* .element1 {
-        justify-content: space-around;
-    } */
-
     .box2,
     .box3,
     p,
@@ -260,8 +266,6 @@ button {
     }
 
 }
-
-/* @media (min-width: 501px) and (max-width: 800px) {} */
 
 @media (max-width: 1200px) {
     .box3 {
