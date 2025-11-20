@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
 }
 
 .bg-green {
@@ -254,4 +254,83 @@ body {
     color: #FBF5F3;
     text-align: left;
     font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+    .mainContainer {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .leftContainer,
+    .rightContainer {
+        width: 95%;
+        height: auto;
+    }
+
+    .cards {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .cards {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .inf {
+        width: 90%;
+        height: auto;
+    }
+
+    .subLeft, .subRight {
+        width: 90%;
+        height: auto;
+    }
+
+    .form, 
+    .form > form {
+        width: 100%;
+        height: auto;
+    }
+
+    .form > form > input,
+    .form > form > .comment {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    span {
+        font-size: 16px;
+    }
+
+    .op {
+        font-size: 22px;
+    }
+
+    .cS,
+    .cSinfo {
+        font-size: 16px;
+    }
+
+    .leftContainer,
+    .rightContainer {
+        padding: 10px;
+    }
+
+    .subLeft,
+    .subRight {
+        padding: 10px;
+    }
+
+    .form > form > button {
+        width: 100%;
+    }
 }
