@@ -6,6 +6,10 @@
     
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 span {
     font-size: 20px;
 }
@@ -15,7 +19,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    min-height:  100vh;
 }
 
 .bg-green {
@@ -27,7 +31,8 @@ body {
     flex-direction: row;
 
     height: 700px;
-    width: 1700px;
+    width: 100%;
+    max-width: 1700px;
 }
 
 .leftContainer {
@@ -37,7 +42,8 @@ body {
     justify-content: center;
 
     height: 650px;
-    width: 850px;
+    width: 100%;
+    max-width: 850px;
     border: 1px transparent black;
 
     padding: 15px;
@@ -81,7 +87,8 @@ body {
     justify-content: space-between;
 
     height: 300px;
-    width: 755px;
+    width: 100%;
+    max-width: 755px;
     border: 1px transparent black;
 
     gap: 25px;
@@ -255,6 +262,7 @@ body {
     text-align: left;
     font-size: 18px;
 }
+
 
 @media (max-width: 1200px) {
     .mainContainer {
