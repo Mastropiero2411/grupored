@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>smartPhones</title>
   <link rel="stylesheet" href="../styles/smartPhones.css">
+  <link rel="stylesheet" href="/styles/navbar.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -16,6 +17,51 @@
 </head>
 
 <body>
+   <header class="navbar">
+        <div class="container1">
+            <div class="logo"><img src="/images/cactusB.png" alt=""></div>
+
+            <nav class="navLinks links">
+                <a href="#">Menu</a>
+                <a href="#">Categorias</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Contacto </a>
+            </nav>
+            <div class="form-floating mb-3">
+                <input type=" text" class="inputNavbar" placeholder="Buscar">
+                <i class="bi bi-search"></i>
+            </div>
+
+            <div class="navIcons links">
+                <a href=""><i class="bi bi-person-circle"></i></a>
+                <a href=""><i class="bi bi-cart"></i></a>
+            </div>
+            <div class="botonHamburguesa">
+                <a class="bi bi-list" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">
+                </a>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <div class="dropdown mt-3 lista">
+                            <a href="#">Menu</a>
+                            <a href="#">Categorias</a>
+                            <a href="#">Sobre nosotros</a>
+                            <a href="#">Contacto </a>
+                        </div>
+                        <div class="navIcons link">
+                            <a href=""><i class="bi bi-person-circle"></i></a>
+                            <a href=""><i class="bi bi-cart"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
   <div class="containerLogos">
     <div class="containerLinksamsung">
       <a class="texto" href="#">

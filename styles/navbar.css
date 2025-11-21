@@ -103,7 +103,7 @@ footer {
 
 .bi-search {
     position: absolute;
-    right: 280px;
+    right: 0px;
     flex-direction: column;
     padding-top: 5px;
 }
@@ -131,12 +131,17 @@ footer {
     font-weight: bold
 }
 
+/* Estilo base para el botón hamburguesa: oculto por defecto, con separación derecha */
+.botonHamburguesa {
+    display: none;
+    margin-right: 12px;
+    align-items: center;
+}
+
 
 @media (min-width:1000px) {
     .botonHamburguesa {
-        display: flex;
         display: none;
-        flex-direction: column;
     }
 }
 
@@ -147,6 +152,13 @@ footer {
 
     .navlinks {
         flex-direction: column;
+    }
+}
+
+@media (max-width:1000px) {
+    /* Mostrar el botón hamburguesa en pantallas pequeñas */
+    .botonHamburguesa {
+        display: flex;
     }
 }
 
