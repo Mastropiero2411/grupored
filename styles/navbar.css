@@ -131,7 +131,6 @@ footer {
     font-weight: bold
 }
 
-/* Estilo base para el botón hamburguesa: oculto por defecto, con separación derecha */
 .botonHamburguesa {
     display: none;
     margin-right: 12px;
@@ -139,13 +138,19 @@ footer {
 }
 
 
-@media (min-width:1000px) {
-    .botonHamburguesa {
-        display: none;
-    }
-}
-
 @media(max-width:1000px) {
+    .offcanvas .offcanvas-body {
+        position: relative;
+        padding-bottom: 64px;/
+    }
+
+    .offcanvas .offcanvas-body .navIcons {
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+        margin-right: 0;
+    }
+
     .links {
         display: none;
     }
@@ -156,7 +161,6 @@ footer {
 }
 
 @media (max-width:1000px) {
-    /* Mostrar el botón hamburguesa en pantallas pequeñas */
     .botonHamburguesa {
         display: flex;
     }
