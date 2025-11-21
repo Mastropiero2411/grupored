@@ -37,7 +37,7 @@ body {
 .headerimg1 {
     width: 80vw;
     height: 200px;
-    background-color: var(--cactus4);
+    /*background-color: var(--cactus4);*/
     text-align: center;
 }
 
@@ -51,14 +51,14 @@ body {
 .headerimg {
     padding: 20px;
     font-size: smaller;
-    background-color: var(--cactus3);
+   /* background-color: var(--cactus3);*/
 }
 
 
 .nav {
     width: 80vw;
     height: 200px;
-    background-color: var(--cactus1);
+    /*background-color: var(--cactus1);*/
 }
 
 .one {
