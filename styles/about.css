@@ -33,22 +33,22 @@ body {
     display: flex;
 }
 
-.header,
-.header1 {
+.headerimg,
+.headerimg1 {
     width: 80vw;
     height: 200px;
     background-color: var(--cactus4);
     text-align: center;
 }
 
-.header1>img {
+.headerimg1>img {
     width: 60%;
     height: 100%;
     border-radius: 0;
 
 }
 
-.header {
+.headerimg {
     padding: 20px;
     font-size: smaller;
     background-color: var(--cactus3);
@@ -166,7 +166,7 @@ summary {
         display: none;
     }
 
-    .header1 {
+    .headerimg1 {
         display: none;
     }
 

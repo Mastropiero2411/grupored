@@ -31,10 +31,7 @@ footer {
 }
 
 .navbar {
-    /* Color blanco semi-transparente */
-    background-color: var(--fondo1);
-
-    /* Borde sutil y sombra para darle profundidad */
+    background-color: beige;
     border-bottom: 1px solid gray;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 
