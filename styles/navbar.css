@@ -42,6 +42,8 @@ footer {
     height: 100px;
     z-index: 1000;
     padding: 10px 0;
+
+    position: relative;
 }
 
 .container1 {
@@ -156,7 +158,9 @@ footer {
     }
 
     .navlinks {
-        flex-direction: column;
+        position: absolute;
+        right: 15px;   /* separación del borde derecho */
+        bottom: 10px;  /* separación del borde inferior */
     }
 }
 
