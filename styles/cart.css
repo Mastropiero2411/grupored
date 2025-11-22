@@ -225,9 +225,10 @@ button {
     color: gray;
 }
 
-.box3>div>img {
+.box3>div>a>img {
     width: 200px;
 }
+
 
 @media (max-width: 500px) {
     .box3 {
