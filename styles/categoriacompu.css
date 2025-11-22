@@ -56,10 +56,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+}
+
+.cardprimary {
+    text-decoration: none;
+    color: black;
 }
 
 .btn-primary {
     width: 40px;
+
 }
 
 @media(max-width:700px) {
