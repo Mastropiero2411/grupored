@@ -15,11 +15,15 @@
     --fondo2: #e5e5e5;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .box2,
 .box3 {
     background-color: var(--fondo1);
     width: 100%;
-    height: auto;
+
 
 }
 
@@ -146,7 +150,7 @@
     text-align: center;
     align-content: center;
     width: 300px;
-    height: auto;
+
     border: 1px solid black;
     border-radius: 10px;
     background-color: #eaeaea;
@@ -202,7 +206,7 @@ button {
 
 .element2>img {
     width: 200px;
-    height: auto;
+
 }
 
 .element2>p {
@@ -249,8 +253,8 @@ button {
     .section2,
     .foot,
     .box2 {
-        width: auto;
-        height: auto;
+
+
         padding-left: 0;
         margin-left: 0;
     }
