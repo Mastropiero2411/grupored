@@ -32,12 +32,13 @@ body {
 }
 
 .card {
-
-    display: flex;
-    width: 30%;
-    box-sizing: border-box;
+    /* Por defecto las columnas son flex */
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    flex: 0 0 calc((100% - 30px) / 3);
+    max-width: calc((100% - 30px) / 3);
+    padding: 12px;
 }
 
 .containerTarjetas {
@@ -91,19 +92,72 @@ body {
 
 
     .imagenLogos {
-        max-width: 90px;
+        max-width: 50px;
     }
 
     .card-img-top {
         max-width: 250px;
     }
 
-    /* Cada tarjeta ocupa 100% y apila verticalmente */
+    /* Muestra 2 columnas en pantalla */
     .card {
-        flex: 0 0 100%;
-        max-width: 100%;
+        flex: 0 0 calc((100% - 15px) / 2);
+        max-width: calc((100% - 15px) / 2);
         display: flex;
         justify-content: center;
         align-items: center;
     }
+}
+
+@media (min-width: 1200px) {
+
+    /* Muestra 5 columnas */
+    .containerTarjetas {
+        gap: 15px;
+    }
+
+    .card {
+        flex: 0 0 calc((100% - 60px) / 5);
+        max-width: calc((100% - 60px) / 5);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* Muestra 4 columnas */
+    .card {
+        flex: 0 0 calc((100% - 45px) / 4);
+        max-width: calc((100% - 45px) / 4);
+    }
+}
+
+@media (min-width: 701px) and (max-width: 991px) {
+
+    /* Muestra 3 columnas */
+    .card {
+        flex: 0 0 calc((100% - 30px) / 3);
+        max-width: calc((100% - 30px) / 3);
+    }
+}
+
+@media (max-width: 500px) {
+
+    /* Solamente muestra 1 columna */
+    .card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        /* padding: 8px; */
+    }
+
+    .containerTarjetas {
+        padding: 10%;
+        gap: 10px;
+    }
+}
+
+/* hace que las tarjetas sean responsivas */
+.card-img-top {
+    width: 100%;
+    height: auto;
+    display: block;
 }
