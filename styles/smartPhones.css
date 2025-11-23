@@ -70,6 +70,10 @@ body {
         max-width: 250px;
     }
 
+    .productImg {
+        max-width: 50px;
+    }
+
     .card {
         display: flex;
         justify-content: center;
