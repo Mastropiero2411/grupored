@@ -39,22 +39,13 @@ footer {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 
-    /* Fija el navbar arriba */
+
     position: fixed;
     left: 0;
     width: 100%;
     height: 100px;
     z-index: 1000;
     padding: 10px 0;
-}
-
-.container1 {
-    width: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo>img {
@@ -118,10 +109,18 @@ footer {
     border-radius: 15px;
     padding-left: 20px;
 }
-
 .bi-list {
     font-size: 30px;
     color: black;
+}
+
+.container1 {
+    width: 99%;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .lista {
@@ -152,6 +151,18 @@ footer {
 
     .navlinks {
         flex-direction: column;
+    }
+
+    .offcanvas .offcanvas-body {
+        position: relative;
+        padding-bottom: 64px;/
+    }
+
+    .offcanvas .offcanvas-body .navIcons {
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+        margin-right: 0;
     }
 }
 
