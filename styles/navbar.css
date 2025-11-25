@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif !important;
 }
 
 :root {
@@ -35,7 +35,7 @@ footer {
     border-bottom: 1px solid gray;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 
-    /* Fija el navbar arriba */
+
     position: fixed;
     left: 0;
     width: 100%;
@@ -131,7 +131,6 @@ footer {
     font-weight: bold
 }
 
-/* Estilo base para el botón hamburguesa: oculto por defecto, con separación derecha */
 .botonHamburguesa {
     display: none;
     margin-right: 12px;
@@ -139,13 +138,19 @@ footer {
 }
 
 
-@media (min-width:1000px) {
-    .botonHamburguesa {
-        display: none;
-    }
-}
-
 @media(max-width:1000px) {
+    .offcanvas .offcanvas-body {
+        position: relative;
+        padding-bottom: 64px;/
+    }
+
+    .offcanvas .offcanvas-body .navIcons {
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+        margin-right: 0;
+    }
+
     .links {
         display: none;
     }
@@ -156,7 +161,6 @@ footer {
 }
 
 @media (max-width:1000px) {
-    /* Mostrar el botón hamburguesa en pantallas pequeñas */
     .botonHamburguesa {
         display: flex;
     }
