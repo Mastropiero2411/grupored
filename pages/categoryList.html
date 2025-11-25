@@ -4,56 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorías</title>
-    <link rel="stylesheet" href="../styles/navbar.css">
     <link rel="stylesheet" href="../styles/categoryList.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
 </head>
-<body>
-    <header class="navbar">
-        <div class="container1">
-            <div class="logo"><img src="../images/cactusB.png" alt=""></div>
+<body class="bgColor">
+    <h1>Explorá nuestras categorías</h1>
+    
+    <br>
 
-            <nav class="navLinks links">
-                <a href="#">Menu</a>
-                <a href="#">Categorias</a>
-                <a href="#">Sobre nosotros</a>
-                <a href="#">Contacto </a>
-            </nav>
-            <div class="form-floating mb-3">
-                <input type=" text" class="inputNavbar" placeholder="Buscar">
-                <i class="bi bi-search"></i>
-            </div>
-
-            <div class="navIcons links">
-                <a href=""><i class="bi bi-person-circle"></i></a>
-                <a href=""><i class="bi bi-cart"></i></a>
-            </div>
-            <div class="botonHamburguesa">
-                <a class="bi bi-list" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                    aria-controls="offcanvasExample">
+    <section class="mainContainer">
+        <div class="leftContainer">
+            <a class="redirectioner" href="../pages/smartPhones.html">
+                <img class="leftImg" src="../images/Iphone17.png" alt="">
+                <span>Teléfonos</span>
+            </a>
+        </div>
+        <div class="rightContainer">
+            <div class="subRight">
+                <a class="redirectioner" href="">
+                    <img src="../images/pc1.png" alt="">
+                    <span>Computadoras</span>
                 </a>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-                    aria-labelledby="offcanvasExampleLabel">
-                    <div class="offcanvas-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body ">
-                        <div class="dropdown mt-3 lista">
-                            <a href="#">Menu</a>
-                            <a href="#">Categorias</a>
-                            <a href="#">Sobre nosotros</a>
-                            <a href="#">Contacto </a>
-                        </div>
-                        <div class="navIcons link">
-                            <a href=""><i class="bi bi-person-circle"></i></a>
-                            <a href=""><i class="bi bi-cart"></i></a>
-                        </div>
-                    </div>
-                </div>
+                <a class="redirectioner" href="">
+                    <img src="../images/superLight.png" alt="">
+                    <span>Gaming</span>
+                </a>
+                <a class="redirectioner" href="">
+                    <img src="../images/AirFr.png" alt="">
+                    <span>Electrodomésticos</span>
+                </a>
+            </div>
+            <div class="subRight">
+                <a class="redirectioner" href="">
+                    <img src="../images/sofa2.png" alt="">
+                    <span>Hogar</span>
+                </a>
+                <a class="redirectioner" href="">
+                    <img src="../images/auto.png" alt="">
+                    <span>Vehículos</span>
+                </a>
+                <a class="redirectioner" href="">
+                    <img src="../images/ToolBox.png" alt="">
+                    <span>Herramientas</span>
+                </a>
             </div>
         </div>
-    </header>
-
-
+    </section>
 </body>
 </html>
