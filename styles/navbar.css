@@ -64,7 +64,7 @@ footer {
 
 .navLinks a {
     text-decoration: none;
-    color: #666;
+    color: #666 !important;
     margin-left: 30px;
     padding: 5px 0;
     transition: color 0.3s;
@@ -135,7 +135,7 @@ footer {
 
 .botonHamburguesa {
     display: none;
-    margin-right: 12px;
+    margin-right: 10%;
     align-items: center;
 }
 
