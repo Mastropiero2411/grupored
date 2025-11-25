@@ -101,14 +101,14 @@ body {
 
 @media (max-width: 480px) {
   body {
-    height: auto;
-    padding: 40px 0;
+    height: max-content;
+    padding: 20px 0;
   }
 
   .MainContainer {
     width: 90%;
     max-width: 400px;
-    padding: 30px 20px;
+    padding: 25px 20px;
   }
 
   .logIn > input,
