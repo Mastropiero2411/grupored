@@ -32,7 +32,6 @@ body {
 
 .general {
     width: 100%;
-    /* height: auto; */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -54,12 +53,10 @@ footer {
 }
 
 .navbar {
-    /* background-color: var(--fondo1)); */
-
-    /* Color blanco semi-transparente */
+   
     background-color: beige;
 
-    /* Borde sutil y sombra para darle profundidad */
+
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 
@@ -75,7 +72,7 @@ footer {
 .logo>img {
     width: 100px;
     height: 100px;
-    /* border: 1px solid black; */
+
 
 }
 
@@ -197,7 +194,6 @@ footer {
     }
 }
 
-/* ======== FOOTER ======= */
 
 .general {
     width: 100%;
