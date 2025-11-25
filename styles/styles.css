@@ -76,6 +76,7 @@ footer {
     color: #666;
     cursor: pointer;
     margin-right: 20px;
+
 }
 
 .bi-person-circle {
@@ -130,7 +131,7 @@ footer {
 
 .lista>a {
     text-decoration: none;
-    color: black;
+    color: black !important;
     font-size: 25px;
     font-weight: bold
 }
