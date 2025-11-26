@@ -1,18 +1,13 @@
-body {
-    background-image: url ("/images/error1.jpg");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.error {
+    margin-top: 40px;
     text-align: center;
-}
-
-h2 {
-    color: #4d774e;
-
-}
-
-a {
-    text-decoration: none;
-    color: #4d774e;
-    font-weight: bold;
-
 }
 
 button {
@@ -28,7 +23,9 @@ button {
 
 @media (max-width: 800px) {
     img {
-        width: 80%;
+        width: 60%;
 
     }
+
+
 }

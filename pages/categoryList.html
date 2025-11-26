@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="../styles/categoryList.css">
-    <link rel="stylesheet" href="../styles/navbar.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/categoryList.css">
 </head>
+
 <body class="bg-green">
     <header class="navbar">
         <div class="container1">
             <div class="logo"><img src="/images/cactusB.png" alt=""></div>
 
             <nav class="navLinks links">
-                <a href="#">Menu</a>
-                <a href="#">Categorias</a>
-                <a href="#">Sobre nosotros</a>
-                <a href="#">Contacto </a>
+                <a href="/index.html">Menu</a>
+                <a href="../pages/categoryList.html">Categorias</a>
+                <a href="../pages/about.html">Sobre nosotros</a>
+                <a href="../pages/contactUs.html">Contacto </a>
             </nav>
             <div class="form-floating mb-3">
                 <input type=" text" class="inputNavbar" placeholder="Buscar">
@@ -23,8 +30,8 @@
             </div>
 
             <div class="navIcons links">
-                <a href=""><i class="bi bi-person-circle"></i></a>
-                <a href=""><i class="bi bi-cart"></i></a>
+                <a href="../pages/logIn.html"><i class="bi bi-person-circle"></i></a>
+                <a href="../pages/cart.html"><i class="bi bi-cart"></i></a>
             </div>
             <div class="botonHamburguesa">
                 <a class="bi bi-list" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
@@ -37,14 +44,14 @@
                     </div>
                     <div class="offcanvas-body ">
                         <div class="dropdown mt-3 lista">
-                            <a href="#">Menu</a>
-                            <a href="#">Categorias</a>
-                            <a href="#">Sobre nosotros</a>
-                            <a href="#">Contacto </a>
+                            <a href="/index.html">Menu</a>
+                            <a href="../pages/categoryList.html">Categorias</a>
+                            <a href="../pages/about.html">Sobre nosotros</a>
+                            <a href="../pages/contactUs.html">Contacto </a>
                         </div>
                         <div class="navIcons link">
-                            <a href=""><i class="bi bi-person-circle"></i></a>
-                            <a href=""><i class="bi bi-cart"></i></a>
+                            <a href="../pages/logIn.html"><i class="bi bi-person-circle"></i></a>
+                            <a href="../pages/cart.html"><i class="bi bi-cart"></i></a>
                         </div>
                     </div>
                 </div>
@@ -52,59 +59,60 @@
         </div>
     </header>
 
-    <p>Explorá nuestras <strong>categorías</strong></p>
+    <h2>Explorá nuestras <strong>categorías</strong></h2>
     <section class="mainContainer">
         <div class="leftContainer">
-            <a class="left" href="">
+            <a class="left" href="/pages/smartPhones.html">
                 <img src="../images/Iphone17.png" alt="Categoría de Teléfonos" class="imgPhone">
                 <span>Teléfonos</span>
             </a>
         </div>
         <div class="rightContainer">
-            <div class="subRight1">
+            <div class="gridRight">
                 <div class="subSub">
-                    <a href="" class="item">
-                        <img class="img" src="../images/pc1.png" alt="">
+                    <a href="/pages/categorycompu.html" class="item">
+                        <img class="img" src="../images/samsung11.png" alt="">
                         <span>Computadoras</span>
                     </a>
                 </div>
-                <div class="subSub">
-                    <a href="" class="item">
+                <div class="subSub electro">
+                    <a href="/pages/error.html" class="item">
                         <img class="img" src="../images/Airf.png" alt="">
                         <span>Electrodomésticos</span>
                     </a>
                 </div>
                 <div class="subSub">
-                    <a href="" class="item">
+                    <a href="/pages/error.html" class="item">
                         <img class="img" src="../images/mouse.png" alt="">
                         <span>Gaming</span>
                     </a>
                 </div>
-            </div>
-            <div class="subRight2">
                 <div class="subSub">
-                    <a href="" class="item">
+                    <a href="/pages/error.html" class="item">
                         <img class="img" src="../images/sofa2.png" alt="">
                         <span>Hogar</span>
                     </a>
                 </div>
                 <div class="subSub">
-                    <a href="" class="item">
+                    <a href="/pages/error.html" class="item">
                         <img class="img" src="../images/auto.png" alt="">
                         <span>Vehículos</span>
                     </a>
                 </div>
                 <div class="subSub">
-                    <a href="" class="item">
+                    <a href="/pages/error.html" class="item">
                         <img class="img" src="../images/ToolBox.png" alt="">
                         <span>Herramientas</span>
-                    </a> 
+                    </a>
                 </div>
             </div>
         </div>
 
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -2,43 +2,22 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif !important;
+    font-family: "Montserrat", sans-serif;
 }
 
-
-
-:root {
-    --cactus: #164a41;
+html,
+body {
+    height: 100%;
 }
 
 body {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #164a41;
-}
-
-.bgColor {
-    background-color: #164a41;
-}
-
-.one>p {
-    font-size: medium;
-    padding: 10px;
-    color: beige;
-    text-align: justify;
-    font-size: small;
-}
-
-.general {
-    width: 100%;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
 footer {
-    margin-top: auto;
+    margin-top: 30px;
 }
 
 
@@ -53,14 +32,14 @@ footer {
 }
 
 .navbar {
-   
+    /* Color blanco semi-transparente */
     background-color: beige;
 
-
+    /* Borde sutil y sombra para darle profundidad */
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 
-
+    /* Fija el navbar arriba */
     position: fixed;
     left: 0;
     width: 100%;
@@ -69,10 +48,19 @@ footer {
     padding: 10px 0;
 }
 
+.container1 {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo>img {
     width: 100px;
     height: 100px;
-
+    /* border: 1px solid black; */
 
 }
 
@@ -97,6 +85,7 @@ footer {
     color: #666;
     cursor: pointer;
     margin-right: 20px;
+
 }
 
 .bi-person-circle {
@@ -130,18 +119,10 @@ footer {
     border-radius: 15px;
     padding-left: 20px;
 }
+
 .bi-list {
     font-size: 30px;
     color: black;
-}
-
-.container1 {
-    width: 99%;
-    margin: 0 !important;
-    padding: 0 !important;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .lista {
@@ -151,7 +132,7 @@ footer {
 
 .lista>a {
     text-decoration: none;
-    color: black;
+    color: black !important;
     font-size: 25px;
     font-weight: bold
 }
@@ -173,18 +154,6 @@ footer {
     .navlinks {
         flex-direction: column;
     }
-
-    .offcanvas .offcanvas-body {
-        position: relative;
-        padding-bottom: 64px;/
-    }
-
-    .offcanvas .offcanvas-body .navIcons {
-        position: absolute;
-        right: 16px;
-        bottom: 16px;
-        margin-right: 0;
-    }
 }
 
 @media(max-width:1000px) {
@@ -194,6 +163,7 @@ footer {
     }
 }
 
+/* ======== FOOTER ======= */
 
 .general {
     width: 100%;
@@ -253,8 +223,7 @@ h2 {
 .copy {
     background-color: var(--cactus);
     color: beige;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    padding: 10px 0 5px 10px;
     font-size: small;
     background-color: var(--cactus1);
 }
@@ -288,6 +257,6 @@ h2 {
     }
 
     .copy {
-        text-align: center;
+        display: none;
     }
 }

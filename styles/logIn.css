@@ -27,7 +27,7 @@ body {
   background-color: #FBF5F3;
 }
 
-.logIn > input {
+.logIn>input {
   width: 400px;
   height: 50px;
   text-align: center;
@@ -48,6 +48,18 @@ body {
   display: block;
   margin: 10px auto;
   border: none;
+}
+
+.MainContainer>div>a {
+  text-decoration: none;
+}
+
+.SubContainer>a>button {
+  width: 300px;
+}
+
+.SubContainer2>a>button {
+  width: 300px;
 }
 
 .bg-green {
@@ -71,7 +83,7 @@ body {
   color: #164A41;
 }
 
-.MainContainer > .SubContainer > p {
+.MainContainer>.SubContainer>p {
   font-size: 28px;
   font-weight: bolder;
   margin-bottom: 10px;
@@ -82,7 +94,7 @@ body {
   font-size: 18px;
 }
 
-.password{
+.password {
   color: #0d2b26;
 }
 
@@ -92,7 +104,7 @@ body {
     max-width: 500px;
   }
 
-  .logIn > input,
+  .logIn>input,
   .continue {
     width: 100%;
     max-width: 400px;
@@ -111,10 +123,9 @@ body {
     padding: 30px 20px;
   }
 
-  .logIn > input,
+  .logIn>input,
   .continue {
     width: 100%;
     max-width: 350px;
   }
 }
-

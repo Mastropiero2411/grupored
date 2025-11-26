@@ -5,7 +5,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
-/* :root {
+:root {
     --cactus1: #164a41;
     --cactus2: #4d774e;
     --cactus3: #90c880;
@@ -13,40 +13,38 @@
     --fondo: #ededed;
     --fondo1: #ffffff;
     --fondo2: #e5e5e5;
-} */ 
+}
+
+/* Página de lista de categorías */
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    min-height:  100vh;
-    padding: 20px;
+    background-color: var(--cactus1) !important;
 }
 
 .bg-green {
     background-color: #164a41;
 }
 
-body > p {
-    font-weight: bolder;
+body>h2 {
+
     font-size: 35px;
     color: white;
+    text-align: center;
+    margin: 0 0 20px 0;
 }
 
 .mainContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;   
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: minmax(260px, 360px) 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    align-items: start;
 
-    max-width: 1500px; 
     width: 100%;
-    gap: 15px;
     padding: 10px;
-    
+    max-height: 1400px;
+    margin-top: 40px;
+
 }
 
 .leftContainer {
@@ -55,16 +53,19 @@ body > p {
     align-items: center;
     justify-content: center;
 
-    max-width: 500px;
+    /* max-width: 500px; */
     width: 100%;
+    height: 99%;
     padding: 15px;
 
     border-radius: 15px;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+
 }
 
-.left{
+
+.left {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,6 +73,7 @@ body > p {
 
     width: 100%;
     text-decoration: none;
+
 }
 
 .rightContainer {
@@ -83,20 +85,18 @@ body > p {
     max-width: 1000px;
     width: 100%;
     gap: 15px;
-    
 }
 
-.subRight1,
-.subRight2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;  /* Nuevo */
-    justify-content: center;
-
-    width: 100%;
+/* Mostrar 2 categorías por fila usando grid */
+.gridRight {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 15px;
+    width: 100%;
+    align-items: start;
+    grid-auto-rows: 50%;
+    margin-bottom: 20px;
 }
-
 
 .subSub {
     display: flex;
@@ -104,14 +104,12 @@ body > p {
     align-items: center;
     justify-content: center;
 
-    max-width: 450px;
     width: 100%;
-    aspect-ratio: 1 / 1;
-
+    height: 100%;
     border-radius: 15px;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
-    
+    padding: 15px;
 }
 
 .subSub span {
@@ -126,6 +124,14 @@ body > p {
     object-fit: contain;
 }
 
+.gridRight .subSub .img {
+    max-height: 60%;
+}
+
+.gridRight .subSub.electro .img {
+    max-height: 58%;
+}
+
 .imgPhone {
     width: 100%;
     max-width: 450px;
@@ -137,47 +143,64 @@ body > p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     width: 100%;
     height: 100%;
     text-decoration: none;
 }
 
-a {
+span {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     color: white !important;
 }
 
-.left span{
+.left span {
     font-size: 1.3rem;
 }
 
 @media (max-width: 1200px) {
     .mainContainer {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
     }
 
     .rightContainer,
     .leftContainer {
-        max-width: 90%;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .gridRight {
+        grid-auto-rows: 180px;
+    }
+
+    .leftContainer {
+        grid-template-columns: 1fr;
+        min-width: 180px;
+        height: 200px;
+    }
+
+    .left>img {
+        max-height: 100px;
     }
 }
 
 @media (max-width: 900px) {
-    .subRight1,
-    .subRight2 {
-        flex-direction: column;
+
+    .gridRight {
+        grid-template-columns: 1fr;
     }
 
     .subSub {
-        max-width: 350px;
-        width: 90%;
+        max-width: 100%;
+        width: 100%;
     }
 
-    body > p {
+    body>p {
         font-size: 1.8rem;
     }
 }
@@ -191,7 +214,7 @@ a {
         font-size: 1rem;
     }
 
-    body > p {
+    body>p {
         font-size: 1.5rem;
     }
 

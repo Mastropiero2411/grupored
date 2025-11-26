@@ -3,10 +3,11 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-    
+
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -19,7 +20,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height:  100vh;
+    min-height: 100vh;
 }
 
 .bg-green {
@@ -62,21 +63,22 @@ body {
     height: 300px;
     width: 750px;
 }
- .subLeft > h1 {
-    text-align: left;
- }
 
- .subLeft > span {
+.subLeft>h1 {
     text-align: left;
- }
- 
+}
 
-.leftContainer > .subLeft > h1 {
+.subLeft>span {
+    text-align: left;
+}
+
+
+.leftContainer>.subLeft>h1 {
     font-weight: bolder;
     color: #FBF5F3;
 }
 
-.leftContainer > .subLeft >span {
+.leftContainer>.subLeft>span {
     color: #FBF5F3;
 }
 
@@ -92,7 +94,7 @@ body {
     border: 1px transparent black;
 
     gap: 25px;
-    
+
 }
 
 .inf {
@@ -109,11 +111,11 @@ body {
     border: 1px transparent black;
     border-radius: 15px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     -webkit-backdrop-filter: blur(10px);
 
     background-color: rgb(255, 255, 255, 0.05);
-    
+
 }
 
 .infTitle {
@@ -146,7 +148,7 @@ body {
     border: 1px transparent black;
 }
 
-.subRight { 
+.subRight {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,7 +163,7 @@ body {
     background-color: #FBF5F3;
 
     box-shadow: 0px 0px 15px 15px #0f352e;
-    
+
 }
 
 .form {
@@ -176,7 +178,7 @@ body {
     padding: 25px;
 }
 
-.form > form{
+.form>form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,7 +190,7 @@ body {
     gap: 15px;
 }
 
-.form > form > input {
+.form>form>input {
     height: 40px;
     width: 400px;
     border: 1px solid #164A41;
@@ -197,19 +199,19 @@ body {
     font-size: 16px;
 }
 
-.form > form > .comment {
-  height: 300px;
-  width: 400px;
-  border: 1px solid #164A41;
-  border-radius: 8px;
-  padding: 10px;
-  font-size: 16px;
-  resize: none;           
-  text-align: left;       
-  vertical-align: top;    
+.form>form>.comment {
+    height: 300px;
+    width: 400px;
+    border: 1px solid #164A41;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+    text-align: left;
+    vertical-align: top;
 }
 
-.form > form > button {
+.form>form>button {
     height: 50px;
     width: 200px;
     border: none;
@@ -218,15 +220,27 @@ body {
     color: #FBF5F3;
     font-size: 18px;
     font-weight: bolder;
-    cursor: pointer;}
-    
+    cursor: pointer;
+}
+
+.form>form>a>button {
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 25px;
+    background-color: #164A41;
+    color: #FBF5F3;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+}
 
 .op {
     font-weight: bolder;
     font-size: 27px;
 }
 
-.subTit > .any {
+.subTit>.any {
     font-weight: light;
 }
 
@@ -243,12 +257,12 @@ body {
 }
 
 
-.rightContainer > h1 {
+.rightContainer>h1 {
     font-weight: bolder;
 }
 
 .cS {
-    font-family: "Montserrat", sans-serif;   
+    font-family: "Montserrat", sans-serif;
     color: #FBF5F3;
     font-weight: bolder;
     text-align: center;
@@ -256,7 +270,7 @@ body {
 }
 
 .cSinfo {
-    font-family: "Montserrat", sans-serif; 
+    font-family: "Montserrat", sans-serif;
     font-weight: light;
     color: #FBF5F3;
     text-align: left;
@@ -297,19 +311,20 @@ body {
         height: auto;
     }
 
-    .subLeft, .subRight {
+    .subLeft,
+    .subRight {
         width: 90%;
         height: auto;
     }
 
-    .form, 
-    .form > form {
+    .form,
+    .form>form {
         width: 100%;
         height: auto;
     }
 
-    .form > form > input,
-    .form > form > .comment {
+    .form>form>input,
+    .form>form>.comment {
         width: 100%;
     }
 }
@@ -338,7 +353,7 @@ body {
         padding: 10px;
     }
 
-    .form > form > button {
+    .form>form>button {
         width: 100%;
     }
 }
