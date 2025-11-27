@@ -5,6 +5,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+.box2 {
+    margin-top: 100px;
+}
+
 .box2,
 .box3 {
     background-color: white;
@@ -74,7 +78,6 @@
 .boxproduct1,
 .boxproduct2 {
     display: flex;
-    color: black;
 }
 
 .boxproduct1 {
@@ -255,9 +258,16 @@ button:hover {
         margin-left: 0;
     }
 
-    /* .element1 {
-        justify-content: space-around;
-    } */
+    button {
+        width: 200px;
+    }
+
+    .boxproduct1,
+    .boxproduct2,
+    .table {
+        align-self: center;
+        margin: 0;
+    }
 
     .box2,
     .box3,
@@ -267,11 +277,16 @@ button:hover {
         font-size: smaller;
         margin-left: 0;
         padding-left: 0;
+
     }
 
-}
+    .subelem,
+    p {
 
-/* @media (min-width: 501px) and (max-width: 800px) {} */
+        width: 220px;
+        padding: 5px;
+    }
+}
 
 @media (max-width: 1200px) {
     .box3 {
@@ -285,11 +300,13 @@ button:hover {
 
     .section1,
     .section2 {
-        width: 100px;
-        height: auto;
+        width: 80px;
+
     }
 
     .element1 {
-        justify-content: space-around;
+        justify-content: space-evenly;
+        width: 300px;
+        margin-left: 50px;
     }
 }
